@@ -1,0 +1,19 @@
+.gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 65px;
+
+    @include tablets {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gallery-img {
+    margin-bottom: 30px;
+}

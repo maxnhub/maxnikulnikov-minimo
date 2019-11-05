@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,11 +29,27 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1480px;
-  width: 95%;
+  width: 100%;
   // width: 1490px;
 
   @include phones {
     width: 85%;
+  }
+
+  &--content {
+    width: 80%;
+  }
+
+  &--gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -78,12 +94,36 @@ button[type="button"] {
 }
 
 a {
-  color: inherit;
   cursor: pointer;
+  color: #b4ad9e;
+  text-decoration: none;
+
+  &:hover {
+    color: #898377;
+  }
 }
 
 img {
   display: block;
   max-width: 100%;
-  max-height: 100%;
 }
+
+.photodiary {
+  margin-bottom: 50px;
+}
+
+.photodiary-desc .notes, .gallery-item .notes {
+  text-transform: uppercase;  
+  font-family: 'Ubuntu', sans-serif; 
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; 
+  margin: 30px 0px; 
+}
+
+.page-text {
+  margin-bottom: 50px;
+}
+

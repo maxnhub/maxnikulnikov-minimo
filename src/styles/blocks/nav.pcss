@@ -1,0 +1,45 @@
+header {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+header .nav-item {
+  text-transform: uppercase;
+  margin-left: 50px;
+
+  @include tablets {
+    margin-left: 0;
+  }
+}
+
+.nav-link {
+  color: #b4ad9e;
+
+  &:hover {
+    color: #898377;
+
+    &:after {
+      transform: scale(1);
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    display: block;
+    transform: scale(0);
+    transition: all 0.4s;
+  }
+}
+
+.navbar > a, .navbar-minimo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
