@@ -5,7 +5,7 @@ function addLi() {
         load.setAttribute('disabled', true);
         loader.classList.add("d-inline-block");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'src/views/common/data.html');
+        xhr.open('GET', '../../dist/data.html');
         xhr.onload = function() {
             if (xhr.status === 200) {
                 setTimeout(function() {
@@ -38,7 +38,7 @@ function addAnotherLi() {
         load.setAttribute('disabled', true);
         loader.classList.add("d-inline-block");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'src/views/common/data2.html');
+        xhr.open('GET', '../../dist/data2.html');
         xhr.onload = function() {
             if (xhr.status === 200) {
                 setTimeout(function() {
